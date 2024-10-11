@@ -3,7 +3,7 @@ import React from 'react'
 const ToDoList = ({todo, setTodo}) => {
 
     const deleteTodo = (id) => {
-        let newTodo = [...todo].filter(item => item.id != id)
+        let newTodo = todo.filter(item => item.id != id)
         setTodo(newTodo);
     }
 
